@@ -1,0 +1,16 @@
+<h1>Weather App 🌤️</h1>
+
+<h3>City: <%= @city %></h3>
+
+<p>Temperature: <%= @temperature['temp_C'] %> °C</p>
+<p>Feels Like: <%= @temperature['FeelsLikeC'] %> °C</p>
+<p>Condition: <%= @temperature['weatherDesc'][0]['value'] %></p>
+
+<hr>
+
+<h4>Search another city</h4>
+
+<%= form_with url: weather_path, method: :get, local: true do %>
+  <%= text_field_tag :city, nil, placeholder: "Enter city", autofocus: :true %>
+  <%= submit_tag "Search" %>
+<% end %>

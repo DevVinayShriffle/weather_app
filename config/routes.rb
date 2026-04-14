@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'weather/show_weather'
+  get 'weather', to: 'weather#show_weather'
 end

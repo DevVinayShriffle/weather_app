@@ -1,0 +1,3 @@
+weather:
+  base_url: "https://wttr.in"
+  default_city: "Delhi"

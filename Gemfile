@@ -67,3 +67,4 @@ end
 
 gem 'httparty'
 gem 'byebug'
+gem 'config'
